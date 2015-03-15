@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <script src = 'login.js'></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="container">
+        <ul>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="index.php">Home</a>
+            </li>
+            <li>
+                <a href="createLogin.html">Sign Up</a>
+            </li>
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+            <li>
+                <a href="userevents.php">My Events</a>
+            </li>
+            <li>
+                <a href='index.php?action=true'>Log Out</a>
+            </li>
+        </ul>
+    </div>
+
+        <!-- /.container -->
+        <p><h3>Please login to create your own events</h3><p>
+        <div id="loginform">
+        <fieldset class="forms"><legend>Login:</legend>
+        username:<br><input type="text" id="username" name="username"></br>
+        password:<br><input type="password" id="password" name="password"></br>
+        <button id="submit" name="false" onclick="login(this.name)">Login</button>
+        </fieldset>
+        <p><a href="createLogin.html">Create a new account</a></p>
+       </div>
+        <div id="createLogin"></div>
+    <div id="myDiv"></div>
+    <div class="content">
+</body>
+
+</html>

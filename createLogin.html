@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <script src = 'login.js'></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="container">
+        <ul>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="index.php">Home</a>
+            </li>
+            <li>
+                <a href="createLogin.html">Sign Up</a>
+            </li>
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+            <li>
+                <a href="userevents.php">My Events</a>
+            </li>
+            <li>
+                <a href='index.php?action=true'>Log Out</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <p><h3>Please fill out all forms.</h3></p>
+        <fieldset class="forms"><legend>Sign Up:</legend>
+        username:<br><input type="text" id="username" name="username"></br>
+        password (at least 6 characters):<br> <input type="password" id="password" name="password"></br>
+        confirm password:<br><input type="password" id="confirm" onblur="pswdCheck()"><div id="checkMark"></div></br>
+        email:<br> <input type="email" id="email" name="email"></br>
+        <button id="submit" name="true" onclick="login(this.name)">Create new account</button>
+        </fieldset>
+       </div>
+        <div id="createLogin"></div>
+    <div id="myDiv"></div>
+    
+</body>
+
+</html>
